@@ -1,0 +1,77 @@
+.work-process{
+    padding: 80px;
+    background: $gray;
+
+    .container{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 80px;
+        .info{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            // height: 600px;
+            gap: 20px;
+            h3{
+                @include dynamic($primary-font-semibold, $dark-blue, 600, 48px,left,56px);
+                
+            }
+            p{@include dynamic($primary-font-regular,
+             $dark-gray-3, 400, 18px,left,24px);
+            }
+        }
+        .container-items{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            .item{
+                border-radius: 15px;
+                background: rgba(#fff, 0.5);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                // align-items: flex-start;
+                // justify-content: flex-start;
+                gap: 20px;
+                box-shadow: 5px 5px 20px rgba(#000, 0.1);
+                // opacity: 0.7;
+
+                &:nth-child(even){
+                    background: #000;
+                    margin-top: 20px;
+
+                }
+                svg{
+                    color: $purple;
+                    width: 72px;
+                    height: 72px;
+                    padding: 20px;
+                    background: $purple-2;
+                    border-radius: 10px;
+                } 
+                p{
+                    @include dynamic($primary-font-regular,
+                    $dark-gray, 400, 16px,left,24px);
+
+                    strong{
+                        @include dynamic($primary-font-semibold,
+                    $dark-blue, 600, 20px,left,24px);
+                }
+                    }
+
+                    &:hover{
+                        opacity: 1;
+                        background: white;
+                        svg{
+                            
+                            color:white;
+                            background: $purple;
+                        }
+                    }
+                }
+            }
+
+        }
+    }

@@ -1,0 +1,9 @@
+@mixin dynamic($fontF:$primary-font-regular,$fontC:#000, $fontW:400,$fontZ:18px ,$textAlign:left,$lineheight:25px)
+{
+    font-family: $fontF;
+    color: $fontC;
+    font-weight: $fontW;
+    font-size: $fontZ;
+    text-align: $textAlign;
+    line-height: $lineheight;
+}

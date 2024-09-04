@@ -1,0 +1,44 @@
+footer{
+    background: $dark-blue-2;
+    padding-bottom: 80px;
+
+
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .logo{
+        img{
+            width: 250px;
+        }
+    }
+    .container-menu{
+        ul{
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            li{
+
+                a{
+                    @include dynamic ($primary-font-regular, $gray, 400, 16px, center,24px );
+                
+                    &:hover{
+                        border-bottom: 2px solid $gray;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    p{  @include dynamic ($primary-font-regular, $gray, 400, 16px, center,24px );
+    }
+}
+

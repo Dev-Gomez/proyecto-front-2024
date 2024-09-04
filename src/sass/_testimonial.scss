@@ -1,0 +1,27 @@
+.testimonial{
+    padding: 80px 0px;
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            @include dynamic($primary-font-semibold, $dark-blue, 600, 48px, center, 56px);
+
+        }
+        p{
+            @include dynamic($primary-font-regular, $dark-gray, 400, 18px, center, 24px);
+
+            strong{
+                @include dynamic($primary-font-semibold, $black, 600, 18px, center, 24px);
+
+            }
+            span{
+                @include dynamic($primary-font-regular, $dark-blue-2, 400, 18px, center, 24px);
+
+            }
+        }
+    }
+}

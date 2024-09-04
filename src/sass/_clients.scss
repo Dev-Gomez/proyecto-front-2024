@@ -1,0 +1,26 @@
+.clients{
+    padding: 80px 0;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        h3{
+            @include dynamic($primary-font-semibold, $dark-blue, 600, 48px, center, 56px);
+
+        }
+        p{
+            @include dynamic($primary-font-regular, $dark-gray, 400, 18px, center, 24px);
+
+        }
+        .container-clients{
+            display: flex;
+            align-items: center;
+        justify-content: center;
+        gap: 40px;
+        }
+    }
+}

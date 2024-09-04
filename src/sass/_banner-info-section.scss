@@ -1,0 +1,145 @@
+.banner-info-section{
+    background: url(../img/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .block{
+        padding: 140px ;
+
+        &.type2{
+
+            padding: 4% 0;
+            .container{
+
+                figure{
+                    border: 2px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: relative;
+                    
+                    img{
+
+                    }
+                    .social-media{
+                        position: absolute;
+                        bottom: -35px;
+                        border:2px green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        padding: 10px;
+                        background: #fff;
+                        border-radius: 7px;
+                        box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
+
+                        a{
+                            padding: 10px;
+                            background: #fff;
+                            border-radius: 7px;
+                            color: $purple;
+                            transition: all 0.3s;
+
+                           &:hover{
+                           background: $purple;
+                           color:#fff; 
+                        }
+
+
+
+                            svg{ 
+                                width: 35px;
+                                height: 35px;
+                                // color: $purple;
+                                
+
+                            } 
+                        }  
+
+                    }
+                }
+               
+                .info{
+                    h2{
+
+                    }
+                }
+                        
+                    
+            }
+        }
+
+
+        .container{
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 40px;
+
+            
+            .info{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                h1{
+                    @include dynamic($primary-font-semibold, $dark-blue, 600, 72px, left,84px);
+                    margin:0;
+                   
+                }
+
+                p{
+                    @include dynamic($primary-font-regular, $dark-gray, 400, 18px, left, 24px);
+
+                }
+                
+                .container-items{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 2px;
+                    margin-top: 60px;
+                    width: 100%;
+
+                    .item{
+                        background: $purple-2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 33%;
+                        height: 106px;
+                        
+                        p{
+                            @include dynamic($primary-font-regular, $dark-gray, 400, 16px, center, 24px);
+                            
+                            strong{
+                                @include dynamic($primary-font-semibold, $dark-gray-2, 600, 32px, center, 40px);
+
+                            }
+
+                            
+                        }
+                        
+                        
+                        
+
+
+                    }
+                }
+            }
+            img{
+                border-radius: 30px;
+                box-shadow: 5px 5px 20px rgba($color: #000, $alpha: 0.1);
+                width: 100%;
+                max-width: 540px;
+            }
+        }
+    }
+}

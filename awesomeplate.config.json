@@ -1,0 +1,11 @@
+{
+  "css": [
+    "node_modules/normalize.css/normalize.css",
+    "src/sass/**/*.scss"
+  ],
+  
+  "js": [
+    "node_modules/jquery/dist/jquery.js",
+    "src/js/**/*.js"
+  ]
+}

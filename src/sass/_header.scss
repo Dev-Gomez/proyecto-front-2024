@@ -1,0 +1,52 @@
+header{
+    position:fixed;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    z-index: 50;
+    box-shadow: 5px 5px 20px rgba(#000, 0.1);
+.container{
+    .menu{
+   
+        display: flex;
+        justify-content: space-between;
+        // padding: 25px 500px;
+        
+       
+        .nav1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 40px;
+           
+            ul{
+               
+                display: flex;
+                gap: 40px;
+
+                li{
+                    a{
+                       @include dynamic($primary-font-regular, $black, 400, 16px, center, 24px )                        color: black;
+                        
+                    
+                    &:hover{
+                    border-bottom: 2px solid $purple;
+                }
+
+                    }
+                }
+            }
+        
+        
+           &>a{
+                border-radius: 5px;
+               
+            }
+           
+        }
+    }
+    
+    
+}
+ 
+}

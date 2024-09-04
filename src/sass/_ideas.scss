@@ -1,0 +1,20 @@
+.ideas{
+    background: $dark-blue;
+    padding: 80px 0;
+    .container{
+        display: flex;
+        gap: 40px;
+align-items: center;
+justify-content: center;   
+flex-direction: column;
+
+h4{
+    @include dynamic ($primary-font-bold, #fff, 700, 48px, center, 56px);
+
+}
+
+p{
+    @include dynamic ($primary-font-bold, $dark-gray, 400, 18px, center, 24px);
+}
+}
+}

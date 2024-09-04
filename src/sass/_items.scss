@@ -1,0 +1,14 @@
+.items{
+
+    .container{
+
+        .item{
+
+            p{@include dynamic ($primary-font-semibold, $dark-blue, 100 , 20px,left,24px)
+
+
+            }
+        }
+    }
+
+}
