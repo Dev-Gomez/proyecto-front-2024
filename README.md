@@ -1,6 +1,6 @@
 ## proyecto de desarrollo con gulp
 
-## requierimentos
+## requerimentos
 
 * Node Js instalado: https://nodejs.org/en
 
