@@ -6,6 +6,12 @@
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
 
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            font-size: 30px;
+            line-height: 35px;
+        }
+
         .info{
             display: flex;
             flex-direction: column;

@@ -10,6 +10,10 @@
         h3{
             @include dynamic($primary-font-semibold, $dark-blue, 600, 48px, center, 56px);
 
+            @media(max-width:768px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
         p{
             @include dynamic($primary-font-regular, $dark-gray, 400, 18px, center, 24px);
