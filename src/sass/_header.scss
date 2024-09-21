@@ -27,6 +27,7 @@ header{
                 justify-content: center;
                 display: flex;
                 gap: 40px;
+                color: $purple;
             }
         }
         
@@ -37,9 +38,29 @@ header{
             display: flex;
             gap: 40px;
 
-            @media (max-width:768px){
-            display: none}
+            &.show{
+                @media (max-width:768px) {
+            transform: translateX(0);
 
+                }
+            }
+
+            @media (max-width:768px){
+             right: 0;
+             top: 0;   
+            position: absolute;
+            width: 250px;          
+            background: white;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 80px 20px 20px 30px;
+            box-shadow: -5px -5px 20px rgba(#000, 0.1);
+            transform: translateX(400px);
+            transition: all (0.3s)
+            }
             
             }
            
@@ -47,6 +68,11 @@ header{
                
                 display: flex;
                 gap: 40px;
+
+                @media (max-width:768px){
+                flex-direction: column;
+                gap: 20px;
+            }
 
                 li{
                     a{
@@ -69,8 +95,16 @@ header{
             }
 
             .close-nav{
+                display: none;
+                @media (max-width:768px) {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                    color: $purple;
+                }
                 svg{ 
-                width: 25px;
+                width: 40px;
                 }
             } 
            
