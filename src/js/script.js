@@ -22,19 +22,25 @@
 // lanzador.addEventListener("click", function(){
 //     alert("hola mundo");
 // });
-
-const lanzador = document.querySelector(".nav-btn");
 const navigator = document.querySelector (".nav1");
-const close = document.querySelector (".close");
 
-console.log (navigator);
+const open = document.querySelector(".nav-btn");
+const close = document.querySelector (".close-nav");
+const out = document.querySelector("main");
+console.log(navigator);
 
 // console.log(lanzador);
 
 open.addEventListener("click", function(){
-    navigator.style.display = "flex";
+    navigator.classList.add('show');
 });
 
 close.addEventListener("click", function (){
-    navigator.style.display = "none";
+    navigator.classList.remove('show');
 });
+
+
+out.addEventListener("click", function (){
+    navigator.classList.remove('show');
+});
+
