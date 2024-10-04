@@ -19,6 +19,8 @@
 
 // console.log(lanzador);
 
+// //primera funcionalidad del navegador
+
 // lanzador.addEventListener("click", function(){
 //     alert("hola mundo");
 // });
@@ -58,7 +60,7 @@ const open = document.querySelector(".nav-btn");
 const close = document.querySelector (".close-nav");
 const out = document.querySelector("main");
 
-
+//funcionalidades que permiten mostrar o esconder el navigator
 const showNavigator = function(){
     navigator.classList.add('show')
 };
@@ -70,5 +72,7 @@ const hiddeNavigator = function(){
 
 
 
-
+//escucha los clicks los elemntos del dom para afectan el navigator
 open.addEventListener("click", showNavigator);
+close.addEventListener ("click", hiddeNavigator);
+out.addEventListener("click", hiddeNavigator);
