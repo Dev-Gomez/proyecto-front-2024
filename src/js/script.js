@@ -22,25 +22,53 @@
 // lanzador.addEventListener("click", function(){
 //     alert("hola mundo");
 // });
+// //elemento afectado relativo a las acciones
+// const navigator = document.querySelector (".nav1");
+
+// //acciones que afectan al navigator
+// const open = document.querySelector(".nav-btn");
+// const close = document.querySelector (".close-nav");
+// const out = document.querySelector("main");
+// console.log(navigator);
+
+// // console.log(lanzador);
+
+// open.addEventListener("click", function(){
+//     navigator.classList.add('show');
+// });
+
+// close.addEventListener("click", function (){
+//     navigator.classList.remove('show');
+// });
+
+
+// out.addEventListener("click", function (){
+//     navigator.classList.remove('show');
+// });
+
+
+
+//segunda funcionalidad
+
+//elemento afectado relativo a las acciones
 const navigator = document.querySelector (".nav1");
 
+//acciones que afectan al navigator
 const open = document.querySelector(".nav-btn");
 const close = document.querySelector (".close-nav");
 const out = document.querySelector("main");
-console.log(navigator);
-
-// console.log(lanzador);
-
-open.addEventListener("click", function(){
-    navigator.classList.add('show');
-});
-
-close.addEventListener("click", function (){
-    navigator.classList.remove('show');
-});
 
 
-out.addEventListener("click", function (){
-    navigator.classList.remove('show');
-});
+const showNavigator = function(){
+    navigator.classList.add('show')
+};
 
+
+const hiddeNavigator = function(){
+    navigator.classList.remove('show')
+};
+
+
+
+
+open.addEventListener("click", showNavigator);
