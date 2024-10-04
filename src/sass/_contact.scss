@@ -9,6 +9,10 @@
         border-radius: 15px;
         padding: 100px;
         background: white;
+
+        @media(max-width:768px)  {
+            grid-template-columns: 1fr;
+        }
         .info{
             display: flex;
             align-items: left;
@@ -17,6 +21,10 @@
             gap:20px;
             h3{
              @include dynamic( $primary-font-semibold, $dark-blue, 600,38px, left, 50px);   
+             @media(max-width:768px) {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+             }
             }
             p{
                 @include dynamic( $primary-font-regular, $dark-gray, 400,18px, left, 24px);
