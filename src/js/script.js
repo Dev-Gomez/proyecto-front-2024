@@ -76,3 +76,6 @@ const hiddeNavigator = function(){
 open.addEventListener("click", showNavigator);
 close.addEventListener ("click", hiddeNavigator);
 out.addEventListener("click", hiddeNavigator);
+
+
+AOS.init();
