@@ -53,7 +53,7 @@
 //segunda funcionalidad
 
 //elemento afectado relativo a las acciones
-const navigator = document.querySelector (".nav1");
+const navigator = document.querySelector(".nav1");
 
 //acciones que afectan al navigator
 const open = document.querySelector(".nav-btn");
@@ -62,12 +62,12 @@ const out = document.querySelector("main");
 
 //funcionalidades que permiten mostrar o esconder el navigator
 const showNavigator = function(){
-    navigator.classList.add('show')
+    navigator.classList.add('show');
 };
 
 
 const hiddeNavigator = function(){
-    navigator.classList.remove('show')
+    navigator.classList.remove('show');
 };
 
 
@@ -79,3 +79,24 @@ out.addEventListener("click", hiddeNavigator);
 
 
 AOS.init();
+
+
+
+const parallax = function(event){
+    const scene = document.querySelector('#scene');
+    const items = scene.querySelectorAll(".item");
+
+    items.forEach(function(item){
+        const depth = item.getAttribute("data-depth");
+
+        const x = (event.clientX * depth) / 20;
+        const y = (event.clientY * depth) / 20;
+
+        item.style.transform = `translate3D(${x}px, ${y}px, 0)`;
+
+    })
+};
+
+//parallax();
+
+document.addEventListener("mousemove", parallax);
