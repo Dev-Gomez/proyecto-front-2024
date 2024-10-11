@@ -11,6 +11,11 @@ flex-direction: column;
 h4{
     @include dynamic ($primary-font-bold, #fff, 700, 48px, center, 56px);
 
+    @media (max-width:768px) {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
 }
 
 p{
