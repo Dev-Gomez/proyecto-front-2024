@@ -8,6 +8,11 @@
         gap: 20px;
         h3{
             @include dynamic($primary-font-bold, $dark-blue, 700, 48px, center, 58px );
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
         p{
             @include dynamic($primary-font-regular, $dark-gray, 400, 18px, center, 26px );
@@ -17,6 +22,9 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 40px;
+            @media (max-width:768px) {
+                grid-template-columns: 1fr;
+            }
 
             .item-project{
                 border-radius: 20px;

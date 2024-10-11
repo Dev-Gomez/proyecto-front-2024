@@ -4,13 +4,20 @@
     background-repeat: no-repeat;
     
     .block{
-        padding: 140px ;
+        padding: 140px 0 40px 0;
 
         &.type2{
+            padding: 80px 0px;
+            position: relative;
+            z-index: 1;
+            
 
             padding: 4% 0;
             .container{
 
+                @media (max-width:768) {
+                    padding: 60px 20px;
+                } 
                 figure{
                     border: 2px solid black;
                     display: flex;
@@ -62,7 +69,13 @@
                 }
                
                 .info{
-                    h2{
+                    h2{ @include dynamic($primary-font-semibold, $dark-blue, 600, 38px, left, 50px);
+
+                        @media (max-width:768px) {
+                            font-size: 30px;
+                            line-height: 35px;
+                        }
+                        
 
                     }
                 }
@@ -79,7 +92,7 @@
             align-items: center;
             gap: 40px;
             @media (max-width:768px){
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: 1fr;
                  
             }
 
@@ -94,6 +107,11 @@
                 h1{
                     @include dynamic($primary-font-semibold, $dark-blue, 600, 72px, left,84px);
                     margin:0;
+
+                    @media (max-width:768px) {
+                        font-size: 40px;
+                        line-height: 45px;
+                    }
                    
                 }
 
